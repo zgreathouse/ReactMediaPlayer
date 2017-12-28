@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 // import YoutubeAPISearch from 'youtube-api-search';
 
 class SearchBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { term: ''};
+  }
+
   render() {
     return (
-      <input />
+      <div>
+        <input
+          value={this.state.term}
+          onChange={(event) => this.setState({term: event.target.value})}
+        />
+      </div>
     );
   }
 }

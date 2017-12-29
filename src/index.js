@@ -15,7 +15,6 @@ class App extends Component {
 
     YTSearch({key: API_KEY, term: 'chillhop'}, videos => {
       this.setState({ videos });
-      console.log(this.state);
     });
   }
 

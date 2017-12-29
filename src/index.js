@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
-const API_KEY = 'AIzaSyCr7wq-csOieIqjuNGpdN9FdMoDlVvpsJo';
 
 //components
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList';
+import VideoDetail from './components/VideoDetail';
 
+//API Key
+const API_KEY = 'AIzaSyCr7wq-csOieIqjuNGpdN9FdMoDlVvpsJo';
+
+//Root Component
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,6 +28,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoDetail video={videos[0]}/>
         <VideoList videos={videos}/>
       </div>
     );

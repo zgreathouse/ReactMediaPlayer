@@ -9,7 +9,7 @@ import VideoList from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
 
 //API Key
-const API_KEY = 'AIzaSyCr7wq-csOieIqjuNGpdN9FdMoDlVvpsJo';
+import { API_KEY } from '../config/keys';
 
 //Root Component
 class App extends Component {

@@ -5,6 +5,7 @@ const API_KEY = 'AIzaSyCr7wq-csOieIqjuNGpdN9FdMoDlVvpsJo';
 
 //components
 import SearchBar from './components/SearchBar';
+import VideoList from './components/VideoList';
 
 class App extends Component {
   constructor(props) {
@@ -19,9 +20,12 @@ class App extends Component {
   }
 
   render() {
+    const { videos } = this.state;
+
     return (
       <div>
         <SearchBar />
+        <VideoList videos={videos}/>
       </div>
     );
   }

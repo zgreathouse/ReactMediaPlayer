@@ -35,10 +35,13 @@ class App extends Component {
 
   render() {
     const { videos, selectedVideo } = this.state;
-    const videoSearch = _.debounce(term => { this.videoSearch(term) }, 300);
+    const videoSearch = _.debounce(term => { this.videoSearch(term) }, 400);
 
     return (
       <div>
+        <div>
+          <h1 className="text-center">React Media Player</h1>
+        </div>
         <SearchBar onSearchTermChange={term => videoSearch(term)}/>
         <VideoDetail video={selectedVideo} />
         <VideoList

@@ -18,6 +18,27 @@
   border-radius: 4px;
 }
 
+.description-header {
+  margin-top: 10px;
+  color: #d73728;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 5px;
+
+  -webkit-animation: fadein 0.7s;
+     -moz-animation: fadein 0.7s;
+      -ms-animation: fadein 0.7s;
+       -o-animation: fadein 0.7s;
+          animation: fadein 0.7s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 .list-group-item {
   cursor: pointer;
 }

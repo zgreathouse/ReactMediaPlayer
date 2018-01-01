@@ -11,9 +11,10 @@ class VideoDetail extends Component{
   toggleDescription() {
     const { showDetail } = this.state;
     const { video } = this.props;
+    console.log(video);
 
     if(showDetail){
-      return <div>{video.snippet.description}</div>
+      return <div className="description">{video.snippet.description}</div>
     } else {
       return <div></div>
     }
@@ -38,6 +39,7 @@ class VideoDetail extends Component{
         <div className="details">
           <div>{video.snippet.title}</div>
           <div
+            className="description-header"
             onClick={() => this.setState({showDetail: !showDetail})}
           >
             Description

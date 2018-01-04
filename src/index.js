@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div>
         <div>
-          <h1 className="text-center">React Media Player</h1>
+          <h3 className="text-center">React Media Player</h3>
         </div>
         <SearchBar onSearchTermChange={term => videoSearch(term)}/>
         <VideoDetail video={selectedVideo} />

@@ -11,7 +11,6 @@ class VideoDetail extends Component{
   toggleDescription() {
     const { showDetail } = this.state;
     const { video } = this.props;
-    console.log(video);
 
     if(showDetail){
       return <div className="description">{video.snippet.description}</div>

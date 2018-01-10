@@ -15,3 +15,5 @@ ReactMediaPlayer pings the Youtube API, allows you to search youtube videos, and
 - Lodash
 - CSS3
 - HTML5
+
+The initial boilerplate for React and Redux was a forked repository from here: https://github.com/StephenGrider/ReduxSimpleStarter
